@@ -12,8 +12,7 @@
 *     - sim(M1, M2)  if M1=M2 and M1'=M2' (i.e on the diagonal)
 *     - gamma * comp((M1, M2), (M3, M4)) else
 *
-* where compatibility of two pairs is defined as
-* comp((M1, M2), (M3, M4)) = exp(- beta * ||vec(M1M3) - vec(M2M4)||1)
+* where compatibility of two pairs is defined as comp((M1, M2), (M3, M4)) = exp(- beta * ||vec(M1M3) - vec(M2M4)||1)
 *
 * where beta and gamma are two manually set positive parameters.
 */
