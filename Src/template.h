@@ -36,8 +36,7 @@ typedef struct Template
 /**
  * Reads a template file, and initializes the specified template object.
  *
- * Currently, the only format supported is ISO 2005. Only the first fingerprint
- * of the template file is considered.
+ * Currently, the only format supported is ISO 2005. Only the first fingerprint of the template file is considered.
  *
  * Returns:
  * 0 in case of success.
@@ -55,10 +54,8 @@ int T_load(T *t, char *filePath);
 void printLoadError(FILE *stream, int err);
 
 /*
- * Computes the the distances between all pairs of minutiae
- * in the template `t` and stores them in `distances`.
- * Additionnaly in the same pass, count for each minutia the number of neighbouring
- * minutiae closer than the threshold `r` (in cm) and stores them in `nbNeighbours`
+ * Computes the the distances between all pairs of minutiae in the template `t` and stores them in `distances`.
+ * Additionnaly in the same pass, count for each minutia the number of neighbouring minutiae closer than the threshold `r` (in cm) and stores them in `nbNeighbours`
  */
 void T_computeDistances(T* t, float *distances, float r, int *nbNeighbours);
 
