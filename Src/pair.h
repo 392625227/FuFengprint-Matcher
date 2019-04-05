@@ -13,8 +13,7 @@
  *
  * where alpha is a manually set positive parameters
  *
- * Thus, a similarity score of 1 means m1 and m2 are identical, and a similarity
- * score of ~0 means they are not similar at all.
+ * Thus, a similarity score of 1 means m1 and m2 are identical, and a similarity score of ~0 means they are not similar at all.
  */
 typedef struct Pair
 {
@@ -24,8 +23,7 @@ typedef struct Pair
 } Pair;
 
 /**
- * Computes all the pairs of a minutia in `l1` and a minutia in `l2` with a similarity
- * score higher than `threshold`, and stores them in `pairs`.
+ * Computes all the pairs of a minutia in `l1` and a minutia in `l2` with a similarity score higher than `threshold`, and stores them in `pairs`.
  * Stores the nb of pairs in `nbPairs`.
  */
 void Pair_buildAll(Pair* pairs, int *nbPairs, LMTS *l1, LMTS *l2,
